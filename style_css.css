@@ -1,0 +1,270 @@
+/*colore di sfondo e del testo per il bottone AVVIA*/
+.start_button {
+  background-color: red !important;
+  color: white !important;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  text-align: center;
+}
+
+/*Transizione per il bottone AVVIA*/
+.start_button:hover {
+  background-color: #9d000b !important;
+}
+
+label.selected.svelte-1bx8sav {
+  display: none !important;
+}
+
+.chatbot, .radio_button, .textbox, .form.svelte-633qhp {
+  max-width: 800px !important;
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+.gr-column {
+  align-items: center !important;
+}
+
+/* stili in modalità scura */
+@media (prefers-color-scheme: dark) {
+  .chatbot {
+    border-radius: 12px !important;
+    background-color: #131b2c !important;
+  }
+
+  /* sfondo del chatbot */
+  .bubble-wrap.svelte-gjtrl6 {
+    background-color: #131b2c !important;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  /* messaggi utente */
+  .message.user {
+    position: relative;
+    color: white !important;
+    background-color: #585b8a !important;
+    border: 2px solid #585b8a !important;
+    border-radius: 16px 16px 16px 16px;
+    margin-left: 50px;
+    padding: 8px 12px 10px 18px;
+    max-width: 90%;
+    align-self: flex-end;
+  }
+
+  /* punta messaggi utente */
+  .message.user::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 10px solid #585b8a !important;
+  }
+
+  /* messaggi bot */
+  .message.bot {
+    position: relative;
+    background-color: #2a3c6b !important;
+    color: white !important;
+    border-radius: 16px 16px 16px 16px;
+    border: 2px solid #2a3c6b !important;
+    margin-right: 50px;
+    padding: 8px 12px 8px 11px;
+    max-width: 90%;
+    align-self: flex-start;
+  }
+
+  /* punta messaggi bot */
+  .message.bot::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 10px solid #2a3c6b !important;
+  }
+
+  /* textbox */
+  .textbox {
+    border-radius: 12px !important;
+    background-color: #131b2c !important;
+  }
+
+  .svelte-1ae7ssi {
+    height: 100% !important;
+    max-height: 100% !important;
+    overflow: auto !important;
+    resize: none !important;
+  }
+  
+  .form.svelte-1vd8eap {
+    max-width: 800px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    display: block !important;
+    border-radius: 12px !important;
+    background-color: #131b2c !important;
+  }
+
+  /* radio_button */
+  .radio_button {
+    background-color: #131b2c !important;
+  }
+
+  /* label radio_button */
+  .svelte-g2oxp3 {
+    background-color: #2a3c6b !important;
+  }
+
+  /* opzioni radio_button */
+  .svelte-1bx8sav label:hover span {
+    background-color: #585b8a !important;
+  }
+
+  .gr-column {
+    align-items: center;
+  }
+}
+
+
+/* stili in modalità chiara */
+@media (prefers-color-scheme: light) {
+  .chatbot {
+  border-radius: 12px !important;
+  background-color: #99b8f7 !important;
+  }
+
+  /* sfondo del chatbot */
+  .bubble-wrap.svelte-gjtrl6 {
+    background-color: #99b8f7 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+  }
+
+  /* messaggi utente */
+  .message.user {
+    color: white !important;
+    background-color: #2a61d3 !important;
+    border: 2px solid #2a61d3 !important;
+    border-radius: 16px 16px 16px 16px;
+    margin-left: 50px;
+    padding: 8px 14px 10px 18px;
+    max-width: 90%;
+    align-self: flex-end;
+  }
+
+  /* punta messaggi utente */
+  .message.user::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 10px solid #2a61d3 !important;
+  }
+
+  /* messaggi bot */
+  .message.bot {
+    background-color: #3a4088 !important;
+    color: white !important;
+    border: 2px solid #3a4088 !important;
+    border-radius: 16px 16px 16px 16px;
+    margin-right: 50px;
+    padding: 8px 12px 8px 12px;
+    max-width: 90%;
+    align-self: flex-start;
+  }
+
+  /* punta messaggi bot */
+  .message.bot::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 10px solid #3a4088 !important;
+  }
+
+  .message.user, .message.user * {
+  color: white !important;
+  }
+
+  .message.bot, .message.bot * {
+  color: white !important;
+  }
+
+  /* textbox */
+  .textbox {
+    border-radius: 12px !important;
+    background-color: #99b8f7 !important;
+  }
+
+  .svelte-1ae7ssi {
+    height: 100% !important;
+    max-height: 100% !important;
+    overflow: auto !important;
+    resize: none !important;
+  }
+
+  .form.svelte-1vd8eap {
+    max-width: 800px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    display: block !important;
+    border-radius: 12px !important;
+    background-color: #99b8f7 !important;
+  }
+
+  /* radio_button */
+  .radio_button {
+    background-color: #99b8f7 !important;
+  }
+
+  .radio_button input[type = "radio"] {
+    background-color: #99b8f7 !important;
+  }
+
+  .radio_button input[type = "radio"]:hover {
+    background-color: white !important;
+  }
+
+  /* label radio_button */
+  .svelte-g2oxp3 {
+    background-color: #3a4088 !important;
+    color: white !important;
+  }
+
+  /* opzioni radio_button */
+  .svelte-1bx8sav {
+    background-color: #dde5f2 !important;
+    color: black !important;
+  }
+
+  .svelte-1bx8sav:hover {
+    background-color: #2a61d3 !important;
+    color: white !important;
+  }
+
+  .svelte-1bx8sav:hover span{
+    background-color: #2a61d3 !important;
+    color: white !important;
+  }
+
+}
